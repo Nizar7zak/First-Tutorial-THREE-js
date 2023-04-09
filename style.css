@@ -44,4 +44,5 @@ nav ul {
     left: 50%;
     top:75%;
     transform: translate(-50%, -25%);
+    font-style: italic;
 }

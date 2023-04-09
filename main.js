@@ -10,7 +10,7 @@ const scene = new THREE.Scene();
 
 const geometry = new THREE.SphereGeometry(3, 64, 32)
 const material = new THREE.MeshStandardMaterial({
-    color: "#00ff83",
+    color: "#00ffff",
     roughness: 0.5
 })
 const mesh = new THREE.Mesh(geometry, material)
@@ -32,7 +32,7 @@ renderer.setSize(sizes.width, sizes.height)
 renderer.render(scene, camera)
 
 const controls = new OrbitControls(camera, canvas)
-controls.enableDamping = true;
+controls.enableDamping = false;
 controls.enablePan = false;
 controls.enableZoom = false;
 controls.autoRotate = true;
